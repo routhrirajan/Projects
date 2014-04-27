@@ -1,0 +1,75 @@
+@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - EFMVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    @*<link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
+        <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/themes/base/css")" rel="stylesheet" type="text/css" />
+        <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/js")"></script>*@
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="metrouicss">
+    
+        <div class="page">
+            <div class="nav-bar">
+                <div class="nav-bar-inner padding10">
+                    <span class="pull-menu"></span>
+
+                    <a href="/"><span class="element brand">
+                        <img class="place-left" src="@Url.Content("~/images/logo32.png")" style="height: 20px">
+                        T&B <small>International private limited</small>
+                    </span></a>
+
+                    <div class="divider"></div>
+
+                    <ul class="menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li data-role="dropdown">
+                            <a href="#">Accounts</a>
+                            <ul class="dropdown-menu" style="">
+                                <li>@Html.ActionLink("Category", "Index", "Category")</li>
+                                <li>@Html.ActionLink("Expense", "Index", "Expense")</li>
+                                <li class="divider"></li>
+                                <li><a href="#">Responsive design</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+    
+    <div class="page" id="page-index">
+        <div class="page-region">
+            <div class="page-region-content">
+
+
+                @RenderSection("featured", required: false)
+                <section class="content-wrapper main-content clear-fix">
+                    @RenderBody()
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="page">
+            <div class="nav-bar">
+                <div class="nav-bar-inner padding10">
+                    <span class="element">
+                        <p>&copy; @DateTime.Now.Year -  <a class="fg-color-white" href="#">Routhri Rajan</a></p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery",
+                        "~/bundles/jsassets",
+                        "~/bundles/jsmetro")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
