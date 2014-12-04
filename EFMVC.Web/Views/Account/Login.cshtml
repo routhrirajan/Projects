@@ -4,56 +4,50 @@
     ViewBag.Title = "Log in";
 }
 
-<div class="page secondary">
-        <div class="page-header">
-            <div class="page-header-content">
-                <h1>@ViewBag.Title<small>.</small></h1>
-                <a href="/" class="back-button big page-back"></a>
-            </div>
-        </div>
+<div class="container" style="padding: 40px 10px">
+    <h1>
+        <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+        @ViewBag.Title
+    </h1>
+    <div class="grid">
+        <div class="row">
+            
+                <h2>Enter your user name and password below.</h2>       
 
-        <div class="page-region">
-            <div class="page-region-content">
-                <div class="grid">
-                    <div class="row">
-<hgroup class="title">    
-    <h2>Enter your user name and password below.</h2>
-</hgroup>
+            
 
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
-
-@using (Html.BeginForm((string)ViewBag.FormAction, "Account")) {
-    @Html.ValidationSummary(true, "Log in was unsuccessful. Please correct the errors and try again.")
-
-    <fieldset class="span6">
-        <legend class="fg-color-greenDark">Log in Form</legend>
-        <div>
-            <h3>@Html.LabelFor(m => m.UserName)</h3>
-            <div class="input-control text">                
-                @Html.TextBoxFor(m => m.UserName, new { required="required" })
-                @Html.ValidationMessageFor(m => m.UserName)
-                <button class="btn-clear"></button>
-            </div>
-            <h3>@Html.LabelFor(m => m.Password)</h3>
-            <div class="input-control password">                
-                @Html.PasswordFor(m => m.Password)
-                @Html.ValidationMessageFor(m => m.Password)
-                <button class="btn-reveal"></button>
-            </div>
-            <div class="input-control checkbox">
-                @Html.CheckBoxFor(m => m.RememberMe)
-                @Html.LabelFor(m => m.RememberMe, new { @class = "helper" })
-            </div>
-        </div>
-        <input type="submit" value="Log in" />
-    </fieldset>
-    <p class="span10">
-        @Html.ActionLink("Register", "Register") if you don't have an account.
-    </p>
-}
+            @using (Html.BeginForm((string)ViewBag.FormAction, "Account"))
+            {
+                @Html.ValidationSummary(false, "Log in was unsuccessful. Please correct the errors and try again.")
+                <div class="span6">
+                    <fieldset>
+                        <legend class="fg-color-greenDark">Log in Form</legend>
+                        <div>
+                            <h3>@Html.LabelFor(m => m.UserName)</h3>
+                            <div class="input-control text warning-state">
+                                @Html.TextBoxFor(m => m.UserName, new { required = "required" })
+                                @Html.ValidationMessageFor(m => m.UserName)
+                                <button class="btn-clear"></button>
+                            </div>
+                            <h3>@Html.LabelFor(m => m.Password)</h3>
+                            <div class="input-control password warning-state">
+                                @Html.PasswordFor(m => m.Password, new { required = "required" })
+                                @Html.ValidationMessageFor(m => m.Password)
+                                <button class="btn-reveal"></button>
+                            </div>
+                            <div class="input-control checkbox">
+                                @Html.CheckBoxFor(m => m.RememberMe, new { @class = "checkbox" })
+                                @Html.LabelFor(m => m.RememberMe, new { @class = "helper" })
+                            </div>
                         </div>
-                    </div>
+                        <input type="submit" class="large primary" value="Log in" />
+                    </fieldset>
                 </div>
-            </div>
+                <div class="span6">
+                    @Html.ActionLink("Register", "Register") if you don't have an account.
+                </div>
+            }
+        </div>
     </div>
+
+</div>

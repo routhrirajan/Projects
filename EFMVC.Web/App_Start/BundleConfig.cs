@@ -31,16 +31,19 @@ namespace EFMVC.Web
             bundles.Add(new ScriptBundle("~/bundles/jsassets")
                 .IncludeDirectory("~/Scripts/assets/", "*.js", searchSubdirectories: false));
 
+            bundles.Add(new ScriptBundle("~/bundles/jsui")
+                .Include("~/Scripts/jquery-ui-1.8.11.min.js"));
+
             // All metro JS files 
             bundles.Add(new ScriptBundle("~/bundles/jsmetro")
-                .IncludeDirectory("~/Scripts/metro/", "*.js", searchSubdirectories: false));
+                .IncludeDirectory("~/js/", "*.js", searchSubdirectories: true));            
 
             // 3rd Party CSS files
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                "~/Content/boilerplate-styles.css",
-                "~/Content/metroui/modern.css",
-                "~/Content/metroui/modern-responsive.css",
-                "~/Content/metroui/site.css",
+                //"~/Content/boilerplate-styles.css",
+                "~/css/metro-bootstrap.css",
+                "~/css/metro-bootstrap-responsive.css",
+                "~/css/iconFont.min.css",
                 "~/Content/toastr.css"));
             
         }

@@ -27,6 +27,7 @@
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <IsCompassProject>True</IsCompassProject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -313,8 +314,59 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Content\toastr.css" />
+    <Content Include="css\iconFont.min.css" />
+    <Content Include="css\metro-bootstrap-responsive.css" />
+    <Content Include="css\metro-bootstrap-responsive.min.css" />
+    <Content Include="css\metro-bootstrap.css" />
+    <Content Include="css\metro-bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\iconFont.dev.svg" />
+    <Content Include="fonts\iconFont.svg" />
+    <Content Include="fonts\metroSysIcons.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\banner2.jpg" />
+    <Content Include="Images\RC_logo_png.png" />
+    <Content Include="Images\RC_logo_png_50x50.png" />
+    <Content Include="Images\RC_Name_50x50.png" />
+    <Content Include="js\metro.min.js" />
+    <Content Include="js\metro\metro-accordion.js" />
+    <Content Include="js\metro\metro-button-set.js" />
+    <Content Include="js\metro\metro-calendar.js" />
+    <Content Include="js\metro\metro-carousel.js" />
+    <Content Include="js\metro\metro-core.js" />
+    <Content Include="js\metro\metro-countdown.js" />
+    <Content Include="js\metro\metro-date-format.js" />
+    <Content Include="js\metro\metro-datepicker.js" />
+    <Content Include="js\metro\metro-dialog.js" />
+    <Content Include="js\metro\metro-drag-tile.js" />
+    <Content Include="js\metro\metro-dropdown.js" />
+    <Content Include="js\metro\metro-fluentmenu.js" />
+    <Content Include="js\metro\metro-global.js" />
+    <Content Include="js\metro\metro-hint.js" />
+    <Content Include="js\metro\metro-initiator.js" />
+    <Content Include="js\metro\metro-input-control.js" />
+    <Content Include="js\metro\metro-listview.js" />
+    <Content Include="js\metro\metro-live-tile.js" />
+    <Content Include="js\metro\metro-loader.js" />
+    <Content Include="js\metro\metro-locale.js" />
+    <Content Include="js\metro\metro-notify.js" />
+    <Content Include="js\metro\metro-panel.js" />
+    <Content Include="js\metro\metro-plugin-template.js" />
+    <Content Include="js\metro\metro-progressbar.js" />
+    <Content Include="js\metro\metro-pull.js" />
+    <Content Include="js\metro\metro-rating.js" />
+    <Content Include="js\metro\metro-scroll.js" />
+    <Content Include="js\metro\metro-slider.js" />
+    <Content Include="js\metro\metro-stepper.js" />
+    <Content Include="js\metro\metro-streamer.js" />
+    <Content Include="js\metro\metro-tab-control.js" />
+    <Content Include="js\metro\metro-table.js" />
+    <Content Include="js\metro\metro-tile-transform.js" />
+    <Content Include="js\metro\metro-times.js" />
+    <Content Include="js\metro\metro-touch-handler.js" />
+    <Content Include="js\metro\metro-treeview.js" />
+    <Content Include="js\metro\metro-wizard.js" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\assets\jquery.mousewheel.min.js" />
     <Content Include="Scripts\assets\moment.js" />
     <Content Include="Scripts\assets\moment_langs.js" />
@@ -339,6 +391,83 @@
     <Content Include="Scripts\google-code-prettify\lang-yaml.js" />
     <Content Include="Content\prettify.css" />
     <Content Include="Scripts\google-code-prettify\prettify.js" />
+    <Content Include="less\wizard.less" />
+    <Content Include="less\window.less" />
+    <Content Include="less\variables.less" />
+    <Content Include="less\utils.less" />
+    <Content Include="less\typography.less" />
+    <Content Include="less\treeview.less" />
+    <Content Include="less\transform.less" />
+    <Content Include="less\tiles.less" />
+    <Content Include="less\tables.less" />
+    <Content Include="less\tab-control.less" />
+    <Content Include="less\streamer.less" />
+    <Content Include="less\stepper.less" />
+    <Content Include="less\slider.less" />
+    <Content Include="less\sidebar.less" />
+    <Content Include="less\scroll.less" />
+    <Content Include="less\reset.less" />
+    <Content Include="less\rating.less" />
+    <Content Include="less\progress-bar.less" />
+    <Content Include="less\panels.less" />
+    <Content Include="less\pagination.less" />
+    <Content Include="less\notify.less" />
+    <Content Include="less\notice.less" />
+    <Content Include="less\navigation-bar.less" />
+    <Content Include="less\misc.less" />
+    <Content Include="less\metro-bootstrap-responsive.less" />
+    <Content Include="less\metro-bootstrap.less" />
+    <Content Include="less\menus.less" />
+    <Content Include="less\lists.less" />
+    <Content Include="less\layout.less" />
+    <Content Include="less\images.less" />
+    <Content Include="less\icons.less" />
+    <Content Include="less\iconFont-content.less" />
+    <Content Include="less\iconFont.less" />
+    <Content Include="less\hint.less" />
+    <Content Include="less\grid.less" />
+    <Content Include="less\funcs.less" />
+    <Content Include="less\forms.less" />
+    <Content Include="less\fluent-menu.less" />
+    <Content Include="less\dataTables.less" />
+    <Content Include="less\countdown.less" />
+    <Content Include="less\colors.less" />
+    <Content Include="less\carousel.less" />
+    <Content Include="less\calendar.less" />
+    <Content Include="less\buttons.less" />
+    <Content Include="less\breadcrumbs.less" />
+    <Content Include="less\balloon.less" />
+    <Content Include="less\accordion.less" />
+    <Content Include="fonts\metroSysIcons.woff" />
+    <Content Include="fonts\metroSysIcons.ttf" />
+    <Content Include="fonts\iconFont.woff" />
+    <Content Include="fonts\iconFont.ttf" />
+    <Content Include="fonts\iconFont.json" />
+    <Content Include="fonts\iconFont.eot" />
+    <Content Include="less\app.less" />
+    <Content Include="config.rb" />
+    <None Include="Properties\PublishProfiles\RCS.pubxml" />
+    <Content Include="sass\ie.scss">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>F:\Projects\EFMVC_V1.01\EFMVC.Web\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="sass\print.scss">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>F:\Projects\EFMVC_V1.01\EFMVC.Web\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
+    <Content Include="sass\screen.scss">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+      <OutputFolder>F:\Projects\EFMVC_V1.01\EFMVC.Web\stylesheets</OutputFolder>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
+    </Content>
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
@@ -382,6 +511,9 @@
     <Content Include="Scripts\metro\tile-slider.js" />
     <Content Include="Scripts\sharrre\jquery.sharrre-1.3.4.min.js" />
     <Content Include="Scripts\sharrre\sharrre.php" />
+    <Content Include="stylesheets\ie.css" />
+    <Content Include="stylesheets\print.css" />
+    <Content Include="stylesheets\screen.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -424,6 +556,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Desktop\" />
+    <Folder Include="Views\PostResume\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

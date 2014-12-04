@@ -13,6 +13,7 @@ namespace EFMVC.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Expense> Expenses { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<PostProfile> Profiles { get; set; }
         public virtual void Commit()
         {
             base.SaveChanges();
@@ -22,6 +23,7 @@ namespace EFMVC.Data
             //modelBuilder.Conventions.Remove<IncludeMetadataConvention>();
             modelBuilder.Configurations.Add(new CategoryConfiguration());
             modelBuilder.Configurations.Add(new ExpenseConfiguration());
+            modelBuilder.Configurations.Add(new PostProfileConfiguration());
         }
        
     }

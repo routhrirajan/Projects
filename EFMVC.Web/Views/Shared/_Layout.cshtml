@@ -3,73 +3,77 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title - EFMVC Application</title>
+    <title>RCS :: @ViewBag.Title</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     @*<link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/css")" rel="stylesheet" type="text/css" />
         <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Content/themes/base/css")" rel="stylesheet" type="text/css" />
         <script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/Scripts/js")"></script>*@
-    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="metrouicss">
-    
-        <div class="page">
-            <div class="nav-bar">
-                <div class="nav-bar-inner padding10">
-                    <span class="pull-menu"></span>
-
-                    <a href="/"><span class="element brand">
-                        <img class="place-left" src="@Url.Content("~/images/logo32.png")" style="height: 20px">
-                        T&B <small>International private limited</small>
-                    </span></a>
-
-                    <div class="divider"></div>
-
-                    <ul class="menu">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li data-role="dropdown">
-                            <a href="#">Accounts</a>
-                            <ul class="dropdown-menu" style="">
+<body class="metro" style="background-color: rgb(239, 234, 227);">
+    <header class="bg-lightBlue" >       
+            <nav class="navigation-bar bg-lightBlue fixed-top">
+                <nav class="navigation-bar-content container">                    
+                    
+                    <a href="/" class="element">
+                        
+                    <img src="@Url.Content("~/images/RC_logo_png_50x50.png")" alt="RCS logo" class="place-left cycle bd-white shadow" style="height: 40px; position:relative; top:-12px;left:-5px">
+                     <div class="place-left" style="position:relative; top:-12px;left:0px"><h5 class="fg-white">RENGAMMAL</h5><small style="position:relative; top:-12px;left:0px">Consultancy</small></div>                
+                                      
+                    @*<img class="place-left" src="@Url.Content("~/images/RC_Name_50x50.png")" style="height: 30px">*@
+                   </a>  
+                         <span class="element-divider"></span>
+                    <a class="pull-menu" href="#">                        
+                    </a>
+                    <ul class="element-menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>    
+                        <li>
+                            <a class="dropdown-toggle" href="#">Services</a>
+                            <ul class="dropdown-menu dark" data-role="dropdown">
+                                <li>@Html.ActionLink("General", "Index", "Home")</li>
+                                <li>@Html.ActionLink("TN Services", "Index", "Home")</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#">Training</a>
+                            <ul class="dropdown-menu dark" data-role="dropdown">
+                        <li>@Html.ActionLink("Software", "Index", "Home")</li>  
+                                </ul>
+                            </li> 
+                        <li>@Html.ActionLink("Post Resume", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About us", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact us", "Contact", "Home")</li>                                                 
+                        @*<li>
+                            <a class="dropdown-toggle" href="#">Accounts</a>
+                            <ul class="dropdown-menu dark" data-role="dropdown">
                                 <li>@Html.ActionLink("Category", "Index", "Category")</li>
                                 <li>@Html.ActionLink("Expense", "Index", "Expense")</li>
                                 <li class="divider"></li>
                                 <li><a href="#">Responsive design</a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </li>*@
+                    </ul>                    
                     @Html.Partial("_LoginPartial")
-                </div>
-            </div>
-        </div>
-    
-    <div class="page" id="page-index">
-        <div class="page-region">
-            <div class="page-region-content">
-
+                </nav>
+            </nav>
+        
+    </header>
+    <div class="row" id="page-index"> 
 
                 @RenderSection("featured", required: false)
                 <section class="content-wrapper main-content clear-fix">
                     @RenderBody()
-                </section>
-            </div>
-        </div>
+                </section>            
     </div>
-    <footer>
-        <div class="page">
-            <div class="nav-bar">
-                <div class="nav-bar-inner padding10">
-                    <span class="element">
-                        <p>&copy; @DateTime.Now.Year -  <a class="fg-color-white" href="#">Routhri Rajan</a></p>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    
     @Scripts.Render("~/bundles/jquery",
-                        "~/bundles/jsassets",
+                        "~/bundles/jsui",
                         "~/bundles/jsmetro")
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+            <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
