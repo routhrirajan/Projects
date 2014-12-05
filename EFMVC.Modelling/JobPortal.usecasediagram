@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9e742d72-6f33-4375-81da-d642152cb3dd" name="JobPortal" linkedPackageId="931b1724-d029-439c-8716-ef399941b271" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="225f1538-cfe5-4bb9-83e0-2f6ff82d9cf2">
+      <profileInstance Id="b4aa2a25-352f-4e2a-87f0-d816caa70853" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8b0f7cd8-dcce-4879-8051-391cf426e12c">
+      <profileInstance Id="017ac1b5-cd89-47b3-9b05-2bc54fbf352d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="cb38a8dc-b149-4463-b562-d78e13ee98c4" name="Employee" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="695ed072-3004-49c8-bea0-970ed8430d6a" />
+        <targetEnds>
+          <association Id="85c38876-1f3c-455d-b35b-fa3ef88843c7" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Search for Jobs" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c68aeb41-a24e-4f18-b89c-5604be9ec276" LastKnownName="Search for Jobs" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c47f8b0d-621b-47de-aa15-db422492121d" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e05eb06-50da-4c12-a08a-6f77ec8b737e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="11320b76-50bd-4ebf-a884-4e65f99a115b" name="Search for Jobs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="86355221-eb71-4c9d-8459-18b810d20503" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3b684bfd-52db-496c-8640-2d502d579989" />
+          </association>
+          <association Id="bfcc2b10-fa8d-41f7-8ebc-5515074fb155" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Post Profile" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="53dc4b94-14e9-407b-99c2-63dd992caad7" LastKnownName="Post Profile" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39fafea2-bc76-49c1-94b1-f2f50b7177d9" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="354bc02b-40cc-4a14-8286-0d31aac3e5a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5111754-adb4-4706-9d21-5a26065685c2" name="Post Profile" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2a39eb49-afc7-466a-b9d4-a2a6b0b71f49" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8319b5ca-befc-4b5d-b420-2c3d64cef37b" />
+          </association>
+          <association Id="8618a11f-0b00-4b47-89b2-32641c11bd84" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Apply Job" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c0569c05-bcda-4041-9555-bc8f4911b563" LastKnownName="Apply Job" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="07f11958-e930-4e88-aa67-2a2aa70a5299" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9645f981-6b6a-4512-b345-0ac4b6183400" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68a6f607-52f9-47de-9482-a2e39f568774" name="Apply Job" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ada0c918-6fe9-48f8-92d1-d425ddd3aaf0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="120b5530-9d2c-4cab-b60a-3547cac56c1b" />
+          </association>
+          <association Id="2a1e35e4-11fc-4c06-b38b-966f0a48afef" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="03ecda74-73d4-4d3c-8ea5-27b02a156cdf" LastKnownName="Register" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="95ce4771-6934-4737-8f48-89d659cefc24" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="57eb1826-d563-4bd3-ab20-75125c7cf29f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ddaa63f5-f123-4e93-89f4-2d03a783761b" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="420c0cc9-f424-4f5f-9b75-c9692d163eff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="826fc358-c7ac-4395-abd1-160ad54d6938" />
+          </association>
+          <association Id="583eed70-e6c3-45a4-9bac-fbb66af99ca0" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b2003a35-d46d-47c6-9ed0-e673f3c35203" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38a7504e-9972-45ba-9ac1-5589e65464f6" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0948971c-5adf-4a3f-8e55-d3adfbe83a1d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d510986d-04a1-4a1d-a5b8-a6642812ce22" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c3edd315-481f-4818-bc98-476a9d7e9a3b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d892c8f7-4adf-4573-ba82-e366e715fff2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="7cac08ed-8337-42e0-b97f-428cd09f4e7c" name="Employer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9b935d2b-22b8-4119-9d88-b97d919979cb" />
+        <targetEnds>
+          <association Id="1e6b57a4-4baf-44f0-b43d-cecac24f3214" isDerived="false" sourceEndRoleName="Employer" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="03ecda74-73d4-4d3c-8ea5-27b02a156cdf" LastKnownName="Register" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="352a4bf8-e9c1-4a12-b771-04f17756f231" name="Employer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8da843c1-5110-4086-9836-696a7a1ec1fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e45e23c-a9f0-47d2-be43-6d2f0a89a285" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fd818832-f6b4-4444-8d8f-1be11d6e9900" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a33d2266-25a0-48f0-be29-9fbd3914c3be" />
+          </association>
+          <association Id="d0d84397-64ff-42e3-8ee3-a3f24ed6ae88" isDerived="false" sourceEndRoleName="Employer" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b2003a35-d46d-47c6-9ed0-e673f3c35203" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0030135c-59c7-4356-86ee-e532f8240f2e" name="Employer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2368289a-841b-47b0-8e83-ae3a880f3d2c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="46309bfd-e42c-4ee9-810f-70c2198c457f" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0abf8c8e-16d7-4fd5-803a-d3b4b1b04be1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ff3603fb-61fd-45b3-839f-5759bfac30bc" />
+          </association>
+          <association Id="f8b56900-7b0b-4ec7-b2d4-e6ebb1c3fdad" isDerived="false" sourceEndRoleName="Employer" targetEndRoleName="Post Job" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2f87201e-b0b1-4204-9ca6-e2252c6007ce" LastKnownName="Post Job" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b2680090-6c20-445f-ad7a-115290e07f44" name="Employer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e475428a-73e0-4b7d-8bf6-2862d1a261b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebe6fc63-df81-4cf2-a8d2-fce391c2492b" name="Post Job" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0d0c6b10-21a6-4d71-af93-570467639850" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d1576397-84b3-4748-8a63-3bc1c29222c9" />
+          </association>
+          <association Id="c9d4e38d-c2c1-40ec-bc35-8a6e1f1a6df6" isDerived="false" sourceEndRoleName="Employer" targetEndRoleName="Search Profile " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="051f1d15-f579-46f5-9f8e-fd6ee071bac1" LastKnownName="Search Profile " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43db1052-9482-4ecf-a0b0-60a3e660a801" name="Employer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ac900cd1-6e32-4fa4-9f7d-71f65554a345" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eec24497-b598-45bf-a8f1-882cf9cc386b" name="Search Profile " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0929c3ec-b063-4b64-82d0-bd3781fcea7f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d9be9b77-5d72-4ff9-b160-f69bf99f8d9d" />
+          </association>
+          <association Id="44d08b35-8ad3-4c22-bcbe-c00033e81d37" isDerived="false" sourceEndRoleName="Employer" targetEndRoleName="Add, Update, Delete Jobs" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="36d1d039-2e6a-41df-8991-66f9c29f43e3" LastKnownName="Add, Update, Delete Jobs" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de4312a9-9f5a-4613-8121-b68cc1456ee2" name="Employer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc3b025f-1c09-4f89-884b-f0bcad255add" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0fd74b8d-4a21-444f-902b-bb4144579937" name="Add, Update, Delete Jobs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b52e7d1b-4a10-400a-84ee-0e6546a264f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="256155af-7a49-456a-b958-fe54da2867f9" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c68aeb41-a24e-4f18-b89c-5604be9ec276" name="Search for Jobs" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4b4e7d55-abcd-4986-af01-f77f85b36d79" />
+        <subjects>
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="f7768875-e408-4061-9659-b2f74659c0c9" name="Apply for Job" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8556bb9a-6eed-4041-9420-f6543d6a4512" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="53dc4b94-14e9-407b-99c2-63dd992caad7" name="Post Profile" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3be95ba2-7fae-473c-800c-e7e89c4a7504" />
+        <subjects>
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c0569c05-bcda-4041-9555-bc8f4911b563" name="Apply Job" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e47c748-bbfc-4055-a99d-a8a4273b8b86" />
+        <subjects>
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="03ecda74-73d4-4d3c-8ea5-27b02a156cdf" name="Register" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f6843d3f-d7fc-49a4-9275-797195af0632" />
+        <subjects>
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b2003a35-d46d-47c6-9ed0-e673f3c35203" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7f65a17d-544d-4ed4-b72b-cfacc8ab1579" />
+        <subjects>
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2f87201e-b0b1-4204-9ca6-e2252c6007ce" name="Post Job" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1aaa2ae6-ff6a-4248-9e1e-c4088f96c44f" />
+        <subjects>
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="051f1d15-f579-46f5-9f8e-fd6ee071bac1" name="Search Profile " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88929f12-2729-4aaa-883a-892e51ac86e9" />
+        <subjects>
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="36d1d039-2e6a-41df-8991-66f9c29f43e3" name="Add, Update, Delete Jobs" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e71e2b6-8ac6-4a82-b6e7-6ae5596e8107" />
+        <subjects>
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="931b1724-d029-439c-8716-ef399941b271" name="EFMVC.Modelling">
+    <elementDefinition Id="e92e56ca-b791-4d5e-a557-bf9319cc96e8" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="e92e56ca-b791-4d5e-a557-bf9319cc96e8"
+  name="EFMVC.Modelling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="695ed072-3004-49c8-bea0-970ed8430d6a"
+        name="Employee"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3b684bfd-52db-496c-8640-2d502d579989"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Search for Jobs"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4b4e7d55-abcd-4986-af01-f77f85b36d79"
+              LastKnownName="Search for Jobs"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e05eb06-50da-4c12-a08a-6f77ec8b737e"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86355221-eb71-4c9d-8459-18b810d20503"
+                  name="Search for Jobs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8319b5ca-befc-4b5d-b420-2c3d64cef37b"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Post Profile"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3be95ba2-7fae-473c-800c-e7e89c4a7504"
+              LastKnownName="Post Profile"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="354bc02b-40cc-4a14-8286-0d31aac3e5a8"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a39eb49-afc7-466a-b9d4-a2a6b0b71f49"
+                  name="Post Profile"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="120b5530-9d2c-4cab-b60a-3547cac56c1b"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Apply Job"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7e47c748-bbfc-4055-a99d-a8a4273b8b86"
+              LastKnownName="Apply Job"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9645f981-6b6a-4512-b345-0ac4b6183400"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ada0c918-6fe9-48f8-92d1-d425ddd3aaf0"
+                  name="Apply Job"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="826fc358-c7ac-4395-abd1-160ad54d6938"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f6843d3f-d7fc-49a4-9275-797195af0632"
+              LastKnownName="Register"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57eb1826-d563-4bd3-ab20-75125c7cf29f"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="420c0cc9-f424-4f5f-9b75-c9692d163eff"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d892c8f7-4adf-4573-ba82-e366e715fff2"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7f65a17d-544d-4ed4-b72b-cfacc8ab1579"
+              LastKnownName="Login"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0948971c-5adf-4a3f-8e55-d3adfbe83a1d"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c3edd315-481f-4818-bc98-476a9d7e9a3b"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9b935d2b-22b8-4119-9d88-b97d919979cb"
+        name="Employer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a33d2266-25a0-48f0-be29-9fbd3914c3be"
+            isDerived="false"
+            sourceEndRoleName="Employer"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f6843d3f-d7fc-49a4-9275-797195af0632"
+              LastKnownName="Register"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8da843c1-5110-4086-9836-696a7a1ec1fa"
+                  name="Employer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd818832-f6b4-4444-8d8f-1be11d6e9900"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ff3603fb-61fd-45b3-839f-5759bfac30bc"
+            isDerived="false"
+            sourceEndRoleName="Employer"
+            targetEndRoleName="Login"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7f65a17d-544d-4ed4-b72b-cfacc8ab1579"
+              LastKnownName="Login"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2368289a-841b-47b0-8e83-ae3a880f3d2c"
+                  name="Employer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0abf8c8e-16d7-4fd5-803a-d3b4b1b04be1"
+                  name="Login"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d1576397-84b3-4748-8a63-3bc1c29222c9"
+            isDerived="false"
+            sourceEndRoleName="Employer"
+            targetEndRoleName="Post Job"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1aaa2ae6-ff6a-4248-9e1e-c4088f96c44f"
+              LastKnownName="Post Job"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e475428a-73e0-4b7d-8bf6-2862d1a261b8"
+                  name="Employer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d0c6b10-21a6-4d71-af93-570467639850"
+                  name="Post Job"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d9be9b77-5d72-4ff9-b160-f69bf99f8d9d"
+            isDerived="false"
+            sourceEndRoleName="Employer"
+            targetEndRoleName="Search Profile "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="88929f12-2729-4aaa-883a-892e51ac86e9"
+              LastKnownName="Search Profile "
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac900cd1-6e32-4fa4-9f7d-71f65554a345"
+                  name="Employer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0929c3ec-b063-4b64-82d0-bd3781fcea7f"
+                  name="Search Profile "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="256155af-7a49-456a-b958-fe54da2867f9"
+            isDerived="false"
+            sourceEndRoleName="Employer"
+            targetEndRoleName="Add, Update, Delete Jobs"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8e71e2b6-8ac6-4a82-b6e7-6ae5596e8107"
+              LastKnownName="Add, Update, Delete Jobs"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc3b025f-1c09-4f89-884b-f0bcad255add"
+                  name="Employer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b52e7d1b-4a10-400a-84ee-0e6546a264f4"
+                  name="Add, Update, Delete Jobs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4b4e7d55-abcd-4986-af01-f77f85b36d79"
+        name="Search for Jobs"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+            LastKnownName="Apply for Job"
+            LastKnownLocation="EFMVC.Modelling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+        name="Apply for Job"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="9c0100a8-ff41-4ce8-9204-6d35c5ee7abb"
+        name="Artifact1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3be95ba2-7fae-473c-800c-e7e89c4a7504"
+        name="Post Profile"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+            LastKnownName="Apply for Job"
+            LastKnownLocation="EFMVC.Modelling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7e47c748-bbfc-4055-a99d-a8a4273b8b86"
+        name="Apply Job"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+            LastKnownName="Apply for Job"
+            LastKnownLocation="EFMVC.Modelling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f6843d3f-d7fc-49a4-9275-797195af0632"
+        name="Register"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+            LastKnownName="Apply for Job"
+            LastKnownLocation="EFMVC.Modelling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7f65a17d-544d-4ed4-b72b-cfacc8ab1579"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+            LastKnownName="Apply for Job"
+            LastKnownLocation="EFMVC.Modelling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1aaa2ae6-ff6a-4248-9e1e-c4088f96c44f"
+        name="Post Job"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+            LastKnownName="Apply for Job"
+            LastKnownLocation="EFMVC.Modelling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="88929f12-2729-4aaa-883a-892e51ac86e9"
+        name="Search Profile "
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+            LastKnownName="Apply for Job"
+            LastKnownLocation="EFMVC.Modelling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8e71e2b6-8ac6-4a82-b6e7-6ae5596e8107"
+        name="Add, Update, Delete Jobs"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
+            LastKnownName="Apply for Job"
+            LastKnownLocation="EFMVC.Modelling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
