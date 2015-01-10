@@ -12,7 +12,7 @@ namespace EFMVC.Domain.Handlers
 {
     public class CreateOrUpdateExpenseHandler : ICommandHandler<CreateOrUpdateExpenseCommand>
     {
-         private readonly IExpenseRepository expenseRepository;
+        private readonly IExpenseRepository expenseRepository;
         private readonly IUnitOfWork unitOfWork;
         public CreateOrUpdateExpenseHandler(IExpenseRepository expenseRepository, IUnitOfWork unitOfWork)
         {

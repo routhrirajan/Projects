@@ -1,0 +1,87 @@
+﻿@model EFMVC.Web.ViewModels.PostProfileFormModel
+@using EFMVC.Web.Helpers;
+@*@(Html.ValidationErrorFor(model => model, "error-state"))*@
+<div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Headline)
+    </div>
+    <div class="editor-field input-control textarea">
+        @Html.TextAreaFor(model => model.Headline)
+        @Html.ValidationMessageFor(model => model.Headline)
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="span3">
+    <div class="editor-label">
+        @Html.LabelFor(model => model.TotalExperience)
+    </div>
+    <div>
+        <div class="slider permanent-hint hint-bottom span3" data-role="slider" data-position="0" data-accuracy="0" data-show-hint="true" data-min="0" data-max="30"></div>
+    </div>
+        </div>
+    <div class="span5">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Mobile)
+        </div>
+        <div class="editor-field input-control text">
+            @Html.TextBoxFor(model => model.Mobile)
+            @Html.ValidationMessageFor(model => model.Mobile)
+        </div>
+    </div>
+    <div class="span6">
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Landline)
+        </div>
+        <div class="editor-field input-control text">
+            @Html.EditorFor(model => model.Landline)
+        </div>
+    </div>
+</div>
+<div class="editor-label row">
+    @Html.LabelFor(model => model.Email)
+</div>
+<div class="editor-field input-control text">
+    @Html.TextBoxFor(model => model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.DOB)
+</div>
+<div class="editor-field input-control text" data-role="datepicker" data-format="dd/m/yy">
+
+    @Html.TextBoxFor(model => model.DOB)
+    <button class="btn-date"></button>
+    @Html.ValidationMessageFor(model => model.DOB)
+
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Gender)
+</div>
+<div class="editor-field span3 input-control select text">
+    @Html.DropDownListFor(m => m.Gender, new SelectList(new[] { "Male", "Female" }))
+    @Html.ValidationMessageFor(model => model.Gender)
+</div>
+<div class="editor-label span3">
+    @Html.LabelFor(model => model.FilePath)
+</div>
+<div class="editor-field span6 input-control file">
+    <input type="file" />
+    <button class="btn-file"></button>
+</div>
+<div class="editor-field span3 input-control">
+    <input type="button" class="span2 large" value="upload" />
+</div>
+<script type="text/javascript">
+    $.validator.setDefaults({
+        highlight: function (element) {
+            $(element).closest(".editor-field").addClass("error-state");
+        },
+        unhighlight: function (element) {
+            $(element).closest(".editor-field").removeClass("error-state");
+        }
+    });
+</script>

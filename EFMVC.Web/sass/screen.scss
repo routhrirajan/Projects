@@ -10,3 +10,8 @@
 .field-validation-valid { display: none }
 .validation-summary-errors { font-weight: bold; color: #f00 }
 .validation-summary-valid { display: none }
+.wrapper {
+	height:100vh;
+	padding: 40px 10px;
+	border: 1px #ccc solid;
+}

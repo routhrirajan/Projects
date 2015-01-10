@@ -1,1 +1,27 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="3680f856-b18f-455d-89e1-e2d645d82152" name="JobPortal" linkedPackageId="af714cb4-c4d4-43b9-8292-93bee349d9fc" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="8380dbf4-e57c-4b40-98a9-9b42efebdd4b">
+      <profileInstance Id="4f919b5f-0095-43cc-adf2-e6050f690dec" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1bf9acb8-e40d-4f47-8518-bed6c008c8e8">
+      <profileInstance Id="6a3440d8-fc19-4e87-9097-99e9f8ed046b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1a654555-dda0-49b8-8c61-99852c7945e9" name="JobPortal" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="fc83d7e6-6473-4669-b47a-8d645d0bddc6" />
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="af714cb4-c4d4-43b9-8292-93bee349d9fc" name="EFMVC.Modelling">
+    <elementDefinition Id="e92e56ca-b791-4d5e-a557-bf9319cc96e8" />
+  </package>
+</activityRootModel>

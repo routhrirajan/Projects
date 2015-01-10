@@ -1,8 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="e92e56ca-b791-4d5e-a557-bf9319cc96e8"
   name="EFMVC.Modelling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="aa1af86d-69f8-4408-8655-4fcbba10e952">
+      <body>Registration is the first step to login</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="f6843d3f-d7fc-49a4-9275-797195af0632"
+          LastKnownName="Register"
+          LastKnownLocation="EFMVC.Modelling.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -73,7 +85,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="3be95ba2-7fae-473c-800c-e7e89c4a7504"
-              LastKnownName="Post Profile"
+              LastKnownName="Post, Edit Profile"
               LastKnownLocation="EFMVC.Modelling.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -143,45 +155,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="826fc358-c7ac-4395-abd1-160ad54d6938"
-            isDerived="false"
-            sourceEndRoleName="Employee"
-            targetEndRoleName="Register"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="f6843d3f-d7fc-49a4-9275-797195af0632"
-              LastKnownName="Register"
-              LastKnownLocation="EFMVC.Modelling.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="57eb1826-d563-4bd3-ab20-75125c7cf29f"
-                  name="Employee"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="420c0cc9-f424-4f5f-9b75-c9692d163eff"
-                  name="Register"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="d892c8f7-4adf-4573-ba82-e366e715fff2"
             isDerived="false"
             sourceEndRoleName="Employee"
@@ -230,45 +203,6 @@
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
-          <association
-            Id="a33d2266-25a0-48f0-be29-9fbd3914c3be"
-            isDerived="false"
-            sourceEndRoleName="Employer"
-            targetEndRoleName="Register"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="f6843d3f-d7fc-49a4-9275-797195af0632"
-              LastKnownName="Register"
-              LastKnownLocation="EFMVC.Modelling.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8da843c1-5110-4086-9836-696a7a1ec1fa"
-                  name="Employer"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="fd818832-f6b4-4444-8d8f-1be11d6e9900"
-                  name="Register"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
           <association
             Id="ff3603fb-61fd-45b3-839f-5759bfac30bc"
             isDerived="false"
@@ -437,7 +371,7 @@
         <subjects>
           <subsystemMoniker
             Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-            LastKnownName="Apply for Job"
+            LastKnownName="Job Portal"
             LastKnownLocation="EFMVC.Modelling.uml" />
         </subjects>
       </useCase>
@@ -445,7 +379,7 @@
     <packageHasNamedElement>
       <subsystem
         Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-        name="Apply for Job"
+        name="Job Portal"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -460,13 +394,13 @@
     <packageHasNamedElement>
       <useCase
         Id="3be95ba2-7fae-473c-800c-e7e89c4a7504"
-        name="Post Profile"
+        name="Post, Edit Profile"
         isAbstract="false"
         isLeaf="false">
         <subjects>
           <subsystemMoniker
             Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-            LastKnownName="Apply for Job"
+            LastKnownName="Job Portal"
             LastKnownLocation="EFMVC.Modelling.uml" />
         </subjects>
       </useCase>
@@ -480,7 +414,7 @@
         <subjects>
           <subsystemMoniker
             Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-            LastKnownName="Apply for Job"
+            LastKnownName="Job Portal"
             LastKnownLocation="EFMVC.Modelling.uml" />
         </subjects>
       </useCase>
@@ -491,10 +425,19 @@
         name="Register"
         isAbstract="false"
         isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="aa0b3b0a-c015-423c-82e3-adda3fd40ff0">
+            <useCaseMoniker
+              Id="7f65a17d-544d-4ed4-b72b-cfacc8ab1579"
+              LastKnownName="Login"
+              LastKnownLocation="EFMVC.Modelling.uml" />
+          </extend>
+        </extendedCases>
         <subjects>
           <subsystemMoniker
             Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-            LastKnownName="Apply for Job"
+            LastKnownName="Job Portal"
             LastKnownLocation="EFMVC.Modelling.uml" />
         </subjects>
       </useCase>
@@ -508,7 +451,7 @@
         <subjects>
           <subsystemMoniker
             Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-            LastKnownName="Apply for Job"
+            LastKnownName="Job Portal"
             LastKnownLocation="EFMVC.Modelling.uml" />
         </subjects>
       </useCase>
@@ -522,7 +465,7 @@
         <subjects>
           <subsystemMoniker
             Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-            LastKnownName="Apply for Job"
+            LastKnownName="Job Portal"
             LastKnownLocation="EFMVC.Modelling.uml" />
         </subjects>
       </useCase>
@@ -536,7 +479,7 @@
         <subjects>
           <subsystemMoniker
             Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-            LastKnownName="Apply for Job"
+            LastKnownName="Job Portal"
             LastKnownLocation="EFMVC.Modelling.uml" />
         </subjects>
       </useCase>
@@ -550,10 +493,21 @@
         <subjects>
           <subsystemMoniker
             Id="8556bb9a-6eed-4041-9420-f6543d6a4512"
-            LastKnownName="Apply for Job"
+            LastKnownName="Job Portal"
             LastKnownLocation="EFMVC.Modelling.uml" />
         </subjects>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="fc83d7e6-6473-4669-b47a-8d645d0bddc6"
+        name="JobPortal"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

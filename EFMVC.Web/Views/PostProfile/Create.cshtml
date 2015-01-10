@@ -1,0 +1,32 @@
+﻿@model EFMVC.Web.ViewModels.PostProfileFormModel
+@{
+    ViewBag.Title = "My Profile";    
+}
+<div class="container bg-white" style="padding: 40px 10px;border: 1px #ccc solid;">
+    <div class="grid">
+        <div class="row">
+            <h1>
+                <a href="/"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
+                @ViewBag.Title
+            </h1>
+            @using (Html.BeginForm("Save", "PostProfile"))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)                
+                <fieldset>
+                    <legend>Update the profile information</legend>
+
+                    @Html.Partial("_CreateOrEdit", Model)
+
+                    <div class="span12 text-right">
+                        <hr class="bg-blue" />
+                        <input type="submit" value="Submit your profile" class="primary large" />
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                </fieldset>     
+            }
+
+        </div>
+    </div>
+</div>
+

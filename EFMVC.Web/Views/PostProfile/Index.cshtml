@@ -1,0 +1,11 @@
+﻿@model IEnumerable<EFMVC.Model.PostProfile>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container" style="padding: 40px 10px">
+<h2>Profile List</h2>
+<div id="divProfileList">
+    @Html.Partial("_PostProfileList", Model)
+</div>
+    </div>

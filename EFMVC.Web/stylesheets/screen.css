@@ -97,3 +97,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .validation-summary-valid {
   display: none;
 }
+
+/* line 13, ../sass/screen.scss */
+.wrapper {
+  height: 100vh;
+  padding: 40px 10px;
+  border: 1px #ccc solid;
+}

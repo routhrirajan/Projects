@@ -3,3 +3,25 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/* line 6, ../sass/ie.scss */
+.wrapper {
+  height: 100%;
+  /* full height of the content box */
+  min-height: 20em;
+  /* Will be AT LEAST 20em tall */
+}
+
+/* line 11, ../sass/ie.scss */
+.wrapper {
+  height: 600px;
+  min-height: 400px;
+  /* Will be AT LEAST 20em tall : overrides height */
+}
+
+/* line 16, ../sass/ie.scss */
+.wrapper {
+  min-height: 400px;
+  /* overrides height and max-height */
+  height: 200px;
+  max-height: 300px;
+}

@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="9e742d72-6f33-4375-81da-d642152cb3dd" name="JobPortal" linkedPackageId="931b1724-d029-439c-8716-ef399941b271" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="9e742d72-6f33-4375-81da-d642152cb3dd" name="JobPortal" linkedPackageId="931b1724-d029-439c-8716-ef399941b271" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="b58a24f1-84a2-4cb8-8942-ef688a8ed8b1">
+      <elementDefinition Id="aa1af86d-69f8-4408-8655-4fcbba10e952" />
+      <body>Registration is the first step to login</body>
+      <annotatedElements>
+        <useCaseMoniker Id="03ecda74-73d4-4d3c-8ea5-27b02a156cdf" LastKnownName="Register" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances Id="225f1538-cfe5-4bb9-83e0-2f6ff82d9cf2">
       <profileInstance Id="b4aa2a25-352f-4e2a-87f0-d816caa70853" name="StandardProfileL2">
@@ -36,7 +45,7 @@
             <elementDefinition Id="3b684bfd-52db-496c-8640-2d502d579989" />
           </association>
           <association Id="bfcc2b10-fa8d-41f7-8ebc-5515074fb155" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Post Profile" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="53dc4b94-14e9-407b-99c2-63dd992caad7" LastKnownName="Post Profile" />
+            <useCaseMoniker Id="53dc4b94-14e9-407b-99c2-63dd992caad7" LastKnownName="Post, Edit Profile" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="39fafea2-bc76-49c1-94b1-f2f50b7177d9" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -67,22 +76,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="120b5530-9d2c-4cab-b60a-3547cac56c1b" />
           </association>
-          <association Id="2a1e35e4-11fc-4c06-b38b-966f0a48afef" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="03ecda74-73d4-4d3c-8ea5-27b02a156cdf" LastKnownName="Register" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="95ce4771-6934-4737-8f48-89d659cefc24" name="Employee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="57eb1826-d563-4bd3-ab20-75125c7cf29f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ddaa63f5-f123-4e93-89f4-2d03a783761b" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="420c0cc9-f424-4f5f-9b75-c9692d163eff" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="826fc358-c7ac-4395-abd1-160ad54d6938" />
-          </association>
           <association Id="583eed70-e6c3-45a4-9bac-fbb66af99ca0" isDerived="false" sourceEndRoleName="Employee" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="b2003a35-d46d-47c6-9ed0-e673f3c35203" LastKnownName="Login" />
             <relationshipOwnedElementsInternal>
@@ -106,22 +99,6 @@
       <actor Id="7cac08ed-8337-42e0-b97f-428cd09f4e7c" name="Employer" isAbstract="false" isLeaf="false">
         <elementDefinition Id="9b935d2b-22b8-4119-9d88-b97d919979cb" />
         <targetEnds>
-          <association Id="1e6b57a4-4baf-44f0-b43d-cecac24f3214" isDerived="false" sourceEndRoleName="Employer" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="03ecda74-73d4-4d3c-8ea5-27b02a156cdf" LastKnownName="Register" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="352a4bf8-e9c1-4a12-b771-04f17756f231" name="Employer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="8da843c1-5110-4086-9836-696a7a1ec1fa" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6e45e23c-a9f0-47d2-be43-6d2f0a89a285" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="fd818832-f6b4-4444-8d8f-1be11d6e9900" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="a33d2266-25a0-48f0-be29-9fbd3914c3be" />
-          </association>
           <association Id="d0d84397-64ff-42e3-8ee3-a3f24ed6ae88" isDerived="false" sourceEndRoleName="Employer" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="b2003a35-d46d-47c6-9ed0-e673f3c35203" LastKnownName="Login" />
             <relationshipOwnedElementsInternal>
@@ -193,20 +170,20 @@
       <useCase Id="c68aeb41-a24e-4f18-b89c-5604be9ec276" name="Search for Jobs" isAbstract="false" isLeaf="false">
         <elementDefinition Id="4b4e7d55-abcd-4986-af01-f77f85b36d79" />
         <subjects>
-          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Job Portal" />
         </subjects>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <subsystem Id="f7768875-e408-4061-9659-b2f74659c0c9" name="Apply for Job" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <subsystem Id="f7768875-e408-4061-9659-b2f74659c0c9" name="Job Portal" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="8556bb9a-6eed-4041-9420-f6543d6a4512" />
       </subsystem>
     </useCaseModelRootHasTypes>
     <packageHasNamedElement>
-      <useCase Id="53dc4b94-14e9-407b-99c2-63dd992caad7" name="Post Profile" isAbstract="false" isLeaf="false">
+      <useCase Id="53dc4b94-14e9-407b-99c2-63dd992caad7" name="Post, Edit Profile" isAbstract="false" isLeaf="false">
         <elementDefinition Id="3be95ba2-7fae-473c-800c-e7e89c4a7504" />
         <subjects>
-          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Job Portal" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
@@ -214,15 +191,21 @@
       <useCase Id="c0569c05-bcda-4041-9555-bc8f4911b563" name="Apply Job" isAbstract="false" isLeaf="false">
         <elementDefinition Id="7e47c748-bbfc-4055-a99d-a8a4273b8b86" />
         <subjects>
-          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Job Portal" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase Id="03ecda74-73d4-4d3c-8ea5-27b02a156cdf" name="Register" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f6843d3f-d7fc-49a4-9275-797195af0632" />
+        <extendedCases>
+          <extend Id="27e9dd12-72f5-4a28-a0e6-72ee80933a68">
+            <useCaseMoniker Id="b2003a35-d46d-47c6-9ed0-e673f3c35203" LastKnownName="Login" />
+            <elementDefinition Id="aa0b3b0a-c015-423c-82e3-adda3fd40ff0" />
+          </extend>
+        </extendedCases>
         <subjects>
-          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Job Portal" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
@@ -230,7 +213,7 @@
       <useCase Id="b2003a35-d46d-47c6-9ed0-e673f3c35203" name="Login" isAbstract="false" isLeaf="false">
         <elementDefinition Id="7f65a17d-544d-4ed4-b72b-cfacc8ab1579" />
         <subjects>
-          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Job Portal" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
@@ -238,7 +221,7 @@
       <useCase Id="2f87201e-b0b1-4204-9ca6-e2252c6007ce" name="Post Job" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1aaa2ae6-ff6a-4248-9e1e-c4088f96c44f" />
         <subjects>
-          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Job Portal" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
@@ -246,7 +229,7 @@
       <useCase Id="051f1d15-f579-46f5-9f8e-fd6ee071bac1" name="Search Profile " isAbstract="false" isLeaf="false">
         <elementDefinition Id="88929f12-2729-4aaa-883a-892e51ac86e9" />
         <subjects>
-          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Job Portal" />
         </subjects>
       </useCase>
     </packageHasNamedElement>
@@ -254,7 +237,7 @@
       <useCase Id="36d1d039-2e6a-41df-8991-66f9c29f43e3" name="Add, Update, Delete Jobs" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8e71e2b6-8ac6-4a82-b6e7-6ae5596e8107" />
         <subjects>
-          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Apply for Job" />
+          <subsystemMoniker Id="f7768875-e408-4061-9659-b2f74659c0c9" LastKnownName="Job Portal" />
         </subjects>
       </useCase>
     </packageHasNamedElement>

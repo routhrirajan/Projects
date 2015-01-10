@@ -36,11 +36,11 @@ namespace EFMVC.Web
 
             // All metro JS files 
             bundles.Add(new ScriptBundle("~/bundles/jsmetro")
-                .IncludeDirectory("~/js/", "*.js", searchSubdirectories: true));            
+                .IncludeDirectory("~/js", "*.js", searchSubdirectories: false));            
 
             // 3rd Party CSS files
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                //"~/Content/boilerplate-styles.css",
+                "~/stylesheets/screen.css",
                 "~/css/metro-bootstrap.css",
                 "~/css/metro-bootstrap-responsive.css",
                 "~/css/iconFont.min.css",

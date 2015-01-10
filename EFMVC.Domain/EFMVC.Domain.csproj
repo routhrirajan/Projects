@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,8 @@
     <Compile Include="Commands\Category\DeleteCategoryCommand.cs" />
     <Compile Include="Commands\Expense\CreateOrUpdateExpenseCommand.cs" />
     <Compile Include="Commands\Expense\DeleteExpenseCommand.cs" />
+    <Compile Include="Commands\Profile\CreateOrUpdatePostProfileCommand.cs" />
+    <Compile Include="Commands\Profile\DeletePostProfileCommand.cs" />
     <Compile Include="Commands\Security\ChangePasswordCommand.cs" />
     <Compile Include="Commands\Security\UserRegisterCommand.cs" />
     <Compile Include="Handlers\Category\CanAddCategory.cs" />
@@ -54,6 +57,8 @@
     <Compile Include="Handlers\Category\DeleteCategoryHandler.cs" />
     <Compile Include="Handlers\Expense\CreateOrUpdateExpenseHandler.cs" />
     <Compile Include="Handlers\Expense\DeleteExpenseHandler.cs" />
+    <Compile Include="Handlers\Profile\CreateOrUpdatePostProfileHandler.cs" />
+    <Compile Include="Handlers\Profile\DeletePostProfileHandler.cs" />
     <Compile Include="Handlers\Security\CanAddUser.cs" />
     <Compile Include="Handlers\Security\CanChangePassword.cs" />
     <Compile Include="Handlers\Security\ChangePasswordHandler.cs" />

@@ -19,7 +19,8 @@ namespace EFMVC.Web.Mappers
         {
             Mapper.CreateMap<CategoryFormModel, CreateOrUpdateCategoryCommand>();
             Mapper.CreateMap<ExpenseFormModel, CreateOrUpdateExpenseCommand>();
-            Mapper.CreateMap<UserFormModel, UserRegisterCommand>(); 
+            Mapper.CreateMap<UserFormModel, UserRegisterCommand>();
+            Mapper.CreateMap<PostProfileFormModel, CreateOrUpdatePostProfileCommand>();
         }
     }
 }

@@ -182,10 +182,13 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ExpenseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PostProfileController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ToSelectListItemsHelper.cs" />
+    <Compile Include="Helpers\ValidationErrorFor.cs" />
     <Compile Include="Mappers\AutoMapperConfiguration.cs" />
     <Compile Include="Mappers\DomainToViewModelMappingProfile.cs" />
     <Compile Include="Mappers\ViewModelToDomainMappingProfile.cs" />
@@ -195,6 +198,7 @@
     <Compile Include="ViewModels\ChangePasswordFormModel.cs" />
     <Compile Include="ViewModels\ExpenseFormModel.cs" />
     <Compile Include="ViewModels\LogOnFormModel.cs" />
+    <Compile Include="ViewModels\PostProfileFormModel.cs" />
     <Compile Include="ViewModels\UserFormModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -325,9 +329,18 @@
     <Content Include="fonts\metroSysIcons.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\banner2.jpg" />
+    <Content Include="Images\busindialogo.png" />
+    <Content Include="Images\IRCTC_Logo.png" />
+    <Content Include="Images\PassportLogo.jpg" />
+    <Content Include="Images\pattachittalogo.jpg" />
+    <Content Include="Images\plesanlogo.jpg" />
     <Content Include="Images\RC_logo_png.png" />
     <Content Include="Images\RC_logo_png_50x50.png" />
     <Content Include="Images\RC_Name_50x50.png" />
+    <Content Include="Images\tneblogo.jpg" />
+    <Content Include="Images\tneblogo.png" />
+    <Content Include="Images\TNPSClogo.jpg" />
+    <Content Include="Images\tnvelailogo.png" />
     <Content Include="js\metro.min.js" />
     <Content Include="js\metro\metro-accordion.js" />
     <Content Include="js\metro\metro-button-set.js" />
@@ -552,11 +565,17 @@
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Scripts\lib\jquery-2.0.3.min.map" />
+    <Content Include="Views\PostProfile\Create.cshtml" />
+    <Content Include="Views\PostProfile\Edit.cshtml" />
+    <Content Include="Views\PostProfile\Index.cshtml" />
+    <Content Include="Views\PostProfile\_CreateOrEdit.cshtml" />
+    <Content Include="Views\PostProfile\_PostProfileList.cshtml" />
+    <Content Include="Views\Services\TNServices.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Desktop\" />
-    <Folder Include="Views\PostResume\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

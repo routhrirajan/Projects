@@ -1,0 +1,13 @@
+Step01 : Create Entities in EFMVC.Model
+Step02 : Create Configurations in EFMVC.Data
+Step03 : Register Model and configuration in EFMVCDataContex in EFMVC.Data
+Step04 : Run Add-Migration Command to create DBMigration script in Package console selecting EFMVC.Data
+Step05 : Run Update-Database command to run script in database in the package console selecting EFMVC.Data
+Step06 : Create Repositories under repository folder in EFMVC.Data
+Step07 : Create CreateOrUpdate and delete command under Commands folder in EFMVC.Domain
+Step08 : Create CreateOrUpdate and delete handler under Handlers folder in EFMVC.Domain
+Step09 : Create FormModel under ViewModels folder in EFMVC.Web
+Step10 : Modify DomainToViewModelMappings under Mappers folder
+Step11 : Modify ViewModelToDomainMappings under Mappers folder
+Step12 : Create a controller in controllers folder
+Step13 : Create view for the controller under view folder 

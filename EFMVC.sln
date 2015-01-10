@@ -21,6 +21,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFMVC.Web.API", "EFMVC.Web.
 EndProject
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "EFMVC.Azure", "EFMVC.Azure\EFMVC.Azure.ccproj", "{3ECE0219-C411-432F-8013-0B7B69F9F8FC}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "EFMVC.Modelling", "EFMVC.Modelling\EFMVC.Modelling.modelproj", "{E9F88E20-3AFC-4D28-8139-0C1FE0B5660E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{2FD48B07-8372-4DA9-A0B1-A4B9B59FC393}"
+	ProjectSection(SolutionItems) = preProject
+		CodingGuidelines.txt = CodingGuidelines.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +74,10 @@ Global
 		{3ECE0219-C411-432F-8013-0B7B69F9F8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3ECE0219-C411-432F-8013-0B7B69F9F8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3ECE0219-C411-432F-8013-0B7B69F9F8FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F88E20-3AFC-4D28-8139-0C1FE0B5660E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F88E20-3AFC-4D28-8139-0C1FE0B5660E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F88E20-3AFC-4D28-8139-0C1FE0B5660E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F88E20-3AFC-4D28-8139-0C1FE0B5660E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

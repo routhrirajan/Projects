@@ -19,6 +19,7 @@ namespace EFMVC.Web.Mappers
         {
             Mapper.CreateMap<Category, CategoryFormModel>();
             Mapper.CreateMap<Expense, ExpenseFormModel>().ForMember(dest => dest.Category, opt => opt.Ignore());
+            Mapper.CreateMap<Profile, PostProfileFormModel>();
 
         }
     }

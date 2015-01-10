@@ -11,7 +11,7 @@ namespace EFMVC.Domain.Handlers
 {
     public class DeleteExpenseHandler : ICommandHandler<DeleteExpenseCommand>
     {
-          private readonly IExpenseRepository expenseRepository;
+        private readonly IExpenseRepository expenseRepository;
         private readonly IUnitOfWork unitOfWork;
         public DeleteExpenseHandler(IExpenseRepository expenseRepository, IUnitOfWork unitOfWork)
         {
